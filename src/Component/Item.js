@@ -1,7 +1,11 @@
 import './Item.css';
-function Item(){
+function Item(props){
+    const ItemName = props.name;
     return (
-        <p className = "nirma">Nirmaa</p>
+       <div>
+        <p className = "nirma">{ItemName}</p>
+        {props.children}
+        </div>
     )
 
 }
